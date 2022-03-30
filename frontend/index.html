@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lab 2</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    
 
+<body>
+
+  <div id="container">
+    <h1>Lab 2 Calculator</h1>
+    <form action="javascript:handleCalc()">
+
+      <input type="text" id="num1" name="num1">
+
+      <select name="calc" id="calc">
+        <option value="add">Addition</option>
+        <option value="sub">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+      </select>
+
+      <input type="text" id="num2" name="num2"><br><br>
+      <input type="submit" value="Calculate">
+
+    </form>
+
+    <p id="result">
+
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
+
 </html>
